@@ -79,5 +79,5 @@ int main(void)
 	while(1){
 	while(ADC_SR_EOC == 0); //wait for conversion to over.
 	PA0 = ADC1->DR;
-} 
+	} 
 }
