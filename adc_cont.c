@@ -58,7 +58,7 @@ int main(void)
 													| GPIO_MODER_MODE1_0 
 													| GPIO_MODER_MODE1_1 
 													| GPIO_MODER_MODE2_0 
-													| GPIO_MODER_MODE2_1;		//ANALOG MODE
+													| GPIO_MODER_MODE2_1;		//ANALOG MODE (PA0,PA1,PA2)
 	
 	RCC->APB2ENR = 1 << 8; //ADC1 ON
 	
@@ -78,6 +78,6 @@ int main(void)
 
 	while(1){
 	while(ADC_SR_EOC == 0); //wait for conversion to over.
-	data = ADC1->DR;
+	PA0 = ADC1->DR;
 } 
 }

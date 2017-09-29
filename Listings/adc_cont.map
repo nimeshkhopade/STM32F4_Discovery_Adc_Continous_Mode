@@ -5,7 +5,7 @@ Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
 Section Cross References
 
     adc_cont.o(i.delay) refers to adc_cont.o(.data) for i
-    adc_cont.o(i.main) refers to adc_cont.o(.data) for data
+    adc_cont.o(i.main) refers to adc_cont.o(.data) for PA0
     startup_stm32f407xx.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_stm32f407xx.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_stm32f407xx.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
